@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MatchLive</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    color:white;
+
+    background-image: url("photo_2026-06-15_22-42-04.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* OSCURECER FONDO */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+    z-index:-1;
+}
+
+/* HEADER */
+header{
+    background:#b30000;
+    padding:18px;
+    font-size:20px;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    letter-spacing:1px;
+}
+
+.logo{
+    width:40px;
+}
+
+/* PRESENTACIÓN (NUEVA SECCIÓN) */
+.presentacion{
+    max-width:750px;
+    margin:25px auto 10px auto;
+    text-align:center;
+    padding:10px 20px;
+}
+
+.presentacion h1{
+    font-size:26px;
+    margin-bottom:8px;
+}
+
+.presentacion p{
+    font-size:14px;
+    color:#ddd;
+    line-height:1.4;
+}
+
+/* CONTENIDO */
+.container{
+    max-width:750px;
+    margin:auto;
+    padding:15px;
+}
+
+/* TARJETAS */
+.card{
+    background:rgba(20,20,20,0.85);
+    border-radius:16px;
+    margin:18px 0;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+.card img{
+    width:100%;
+    display:block;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.subtitle{
+    font-size:13px;
+    color:#ccc;
+    margin-bottom:12px;
+}
+
+/* BOTÓN */
+.btn{
+    display:inline-block;
+    background:#e10600;
+    color:white;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:6px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#ff1a1a;
+}
+
+/* FOOTER SIMPLE */
+.footer{
+    text-align:center;
+    margin:25px 0;
+    font-size:13px;
+    color:#ddd;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    
+    ZONAGOL
+</header>
+
+<!-- PRESENTACIÓN -->
+<div class="presentacion">
+    <h1>⚽ Bienvenido a ZonaGol</h1>
+    <p>
+        Tu sitio para ver partidos en vivo, resultados actualizados y acceso rápido a los eventos deportivos más importantes de la fecha.
+    </p>
+</div>
+
+<div class="container">
+
+    <!-- PARTIDO PRINCIPAL -->
+    <div class="card">
+
+        <div class="card-content">
+            <div class="title">DIRECTVSPORT</div>
+            <div class="subtitle">⚽ Transmisión en vivo ahora</div>
+
+            <a class="btn" href="https://alangulotv2.su/eventos.html?r=aHR0cHM6Ly9zdWRhbWVyaWNhcGxheTIuY29tL2NhbmFsXzgxMTIvY3phX2RzcG9ydHMuaHRtbA==">
+                VER PARTIDO
+            </a>
+        </div>
+    </div>
+
+    <!-- RESULTADOS -->
+    <div class="card">
+        <div class="card-content">
+            <div class="title">Resultados en vivo</div>
+            <div class="subtitle">Todos los partidos actualizados</div>
+
+            <a class="btn" href="https://www.futbolada.com/" target="_blank">
+                VER RESULTADOS
+            </a>
+        </div>
+    </div>
+
+    <!-- COMUNIDAD -->
+    <div class="card">
+        <div class="card-content">
+            <div class="title">Comunidad</div>
+            <div class="subtitle">Recibí enlaces y avisos de partidos</div>
+
+            <a class="btn" href="https://chat.whatsapp.com/DDbA4YKMKC2FvZaA4wNIbn" target="_blank">
+                WhatsApp
+            </a>
+
+            <br><br>
+
+            <a class="btn" href="https://t.me/+LV5kIOiCWus0ZjZh" target="_blank">
+                Telegram
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        ⚽ Hecho para fanáticos del fútbol en vivo
+    </div>
+
+</div>
+
+</body>
+</html>
